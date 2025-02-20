@@ -1,0 +1,14 @@
+{
+  "name": "next-crm-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "prisma generate && prisma db push  && prisma db seed && next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "prisma": {
+    "seed": "ts-node ./prisma/seeds/seed.ts"
+  }
+}
