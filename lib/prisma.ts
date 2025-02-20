@@ -15,4 +15,4 @@ if (process.env.NODE_ENV === "production") {
   prisma = global.cachedPrisma;
 }
 
-export const prisamdb = prisma;
+export const prismadb = prisma;
